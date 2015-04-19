@@ -1,6 +1,8 @@
 # seedReact
 
 Betaserie + Kickass.to + Freebox OS + React.js
+Note that : freebox-os-client, node-betaserie and nt found in npm are not the one I use here (April 2015).
+I asked for pull requests since I updated some of these.
 
 ## Config files
 
