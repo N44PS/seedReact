@@ -1,0 +1,102 @@
+.icon{
+	vertical-align: middle;
+	display: table-cell;
+	min-width: 44px;
+	height: 100%;
+	font-family: "icon";
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+    &:before{
+    	height: 22px;
+    	width: 22px;
+        display: inline-block;
+        text-align: center;
+    	@include border-radius(22px);
+    }
+    &:hover{
+		cursor: pointer;
+    }
+    &--seeding{
+    	&:before{
+	    	background:$bg-normal;
+			content: '\e808';
+			color: white;
+		}
+		&:hover:before{
+        	background:$bg-error;
+            content: '\e809';
+        }
+    }
+    &--ok:before {
+        background: $bg-downloading;
+        content: '\e808'; 
+    }
+    &--stopped{
+    	&:before{
+    	    background:$bg-stopped;
+    	    content: '\e817';
+    	}
+    	&:hover:before{
+    		background:$bg-downloading;
+        	content: '\e815';
+    	}
+    }
+    &--queued{
+        &:before{
+            background:$bg-stopped;
+            content: '\e819';
+        }
+    }
+    &--downloading{
+    	&:before {
+        	background:$bg-downloading;
+        	content: '\e815'; 
+    	}
+    	&:hover:before{
+    		background:$bg-stopped;
+        	content: '\e817';
+    	}
+    }
+    &--error{
+        &:before {
+            background:$bg-error;
+            content: '\e81f';
+        }
+        &:hover:before{
+            content: '\e809';
+        }
+    }
+    &--toadd{
+    	&:before {
+            background:$bg-normal;
+            content: '\e80b'; 
+	    }
+	    &:hover:before{
+	    	background:$bg-hover;
+	    }
+	}
+	&--added:before{
+		background-color: $bg-downloading;
+		content: '\e808';
+    }
+    &--checking:before, &--stopping:before, &--searching:before {
+        background-color: $bg-normal;
+        content: '\e81d'; 
+        animation: spin 2s infinite linear;
+    }
+    &--exists:before {
+    	background-color: $bg-downloading;
+        content: '\e808'; 
+    }
+    &--unfound:before {
+		background:$bg-error;
+    	content: '\e80c'; 
+	}
+}

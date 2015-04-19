@@ -1,0 +1,59 @@
+.table {
+	width:100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+}
+
+td, th{
+	border-left: 1px solid rgba(0,0,0,.05);
+    font-size: inherit;
+    &:first-child{
+		border-left-width: 0;
+    }
+    &:last-child{
+		text-align: right;
+    }
+    thead {
+	    background-color: #e0e0e0;
+	    color: #000;
+	    text-align: left;
+	    vertical-align: bottom;
+	}
+}
+
+thead td{
+	font-weight: 600;
+	color: rgba(255,255,255,.4);
+}
+
+td{
+    padding: 0.25rem 0.5rem;
+	opacity: .6;
+	background-color: transparent;
+}
+
+.name, .rate, .action, .percentage{
+	opacity: 1;
+}
+
+.percentage div + div{
+	opacity: .6;
+}
+	
+tbody {
+	tr:nth-child(2n+1){
+    	background-color: rgba(255,255,255,.03);
+	}
+	tr:hover, tbody .table-odd:hover{
+	    background-color: rgba(0,0,0,.1);
+	    color: white;
+	    cursor: pointer;
+	    td{
+	    	opacity: 1;
+	    }
+	}
+	td:last-child{
+		min-width: 80px;
+	}
+}

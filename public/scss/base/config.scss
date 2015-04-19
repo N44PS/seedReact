@@ -1,0 +1,38 @@
+/* BASE */
+
+$font-size-base:16px;
+
+/* MENU */
+
+$bg-menu:#f9f9f9;
+$color-menu:#aaa;
+$color-menu-hover:#666;
+$border-color-menu:rgba(0,0,0,.04);
+
+/* BETASERIE */
+
+$bg-beta:#663f71;
+$odd-bg-beta:rgba(0,0,0,0.05);
+$hover-bg-beta:rgba(0,0,0,0.15);
+
+$border-color-beta:rgba(0,0,0,0.05);
+$title-color-beta:rgba(0,0,0,.4);
+
+/* SEEDBOX */
+
+$bg-seed:#2d3e4f;
+$odd-bg-download:rgba(0,0,0,0.1);
+$hover-bg-download:rgba(0,0,0,0.22);
+
+$color-seed:rgba(255,255,255,.6);
+$color-seed-important:white;
+$border-color-seed:rgba(0,0,0,.05);
+$title-color-seed:#5a606b;
+
+/* ICONS */
+
+$bg-normal:rgba(255, 255, 255, 0.05);
+$bg-hover:rgba(0, 0, 0, 0.05);
+$bg-downloading:#34b064;
+$bg-error:#bc352b;
+$bg-stopped:#e27d29;
