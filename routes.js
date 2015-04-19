@@ -14,7 +14,7 @@ var
   betaserie = require('./config/betaserie.js'),
 
   SeedBox = require('freebox-os-client')(hote),
-  BetaSerie = require('betaseries')(betaserie.api_key);
+  BetaSerie = new (require('betaseries'))(betaserie.api_key);
   Kickass = require('kickass-simple-search');
 
   module.exports = app = {
