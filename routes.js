@@ -67,7 +67,7 @@ var
   getShows: function(req, res){
     var episodes = BetaSerie.Episodes, nbUser = betaserie.users.length, nbShows = 0;
     req.session.users.forEach(function(user, i){
-      episodes.all(user.token,null,4,null,function(shows){
+      episodes.all(user.token,null,null,4,null,function(shows){
           req.session.users[i].shows = shows;
           nbShows++;
           console.log("shows",nbShows,nbUser);

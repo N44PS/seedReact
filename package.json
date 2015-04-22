@@ -12,6 +12,7 @@
   "author": "Michaut Florian",
   "license": "MIT",
   "dependencies": {
+    "betaseries": "0.0.4",
     "cookie-parser": "^1.3.4",
     "express": "~4.9.7",
     "express-handlebars": "~1.1.0",
@@ -20,6 +21,7 @@
     "node-jsx": "~0.11.0",
     "nt": "^0.4.1",
     "react": "~0.11.2",
+    "request": "^2.55.0",
     "socket.io": "^1.1.0"
   },
   "devDependencies": {
