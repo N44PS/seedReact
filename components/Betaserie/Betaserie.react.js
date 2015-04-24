@@ -14,7 +14,11 @@ module.exports = Betaserie = React.createClass({
     this.setState(this.getInitialState(newProps));
   },
   componentDidMount: function(){
+    var self = this;
     this.setState({socket: io.connect()});
+    this.state.socket.on('gotUsers', function (users) {
+        self.setState({users: users});
+    });
   },
   changeUser: function(user, event){
     var users = document.getElementsByClassName("user"), 

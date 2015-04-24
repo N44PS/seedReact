@@ -34,5 +34,4 @@ var server = http.createServer(app).listen(port, function() {
 var io = require('socket.io').listen(server);
 
 // Index Route
-app.get('/logout', routes.logout);
 app.get('/', routes.home(io));

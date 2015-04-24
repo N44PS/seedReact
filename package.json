@@ -1,12 +1,12 @@
 {
   "name": "seed-react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Betaserie + Kickass.to + Freebox + Reactjs",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
-    "watch": "watchify app.js -o public/js/bundle.js -v",
-    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
-    "build": "npm run browserify ",
+    "watch": "watchify main.js -o public/js/bundle.js -v",
+    "browserify": "browserify main.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify",
     "start": "npm run watch & nodemon server.js & gulp"
   },
   "author": "Michaut Florian",
@@ -19,10 +19,11 @@
     "express-session": "^1.11.1",
     "kickass-simple-search": "^1.0.0",
     "node-jsx": "~0.11.0",
-    "nt": "^0.4.1",
+    "nt": "^0.5.0",
     "react": "~0.11.2",
     "request": "^2.55.0",
-    "socket.io": "^1.1.0"
+    "socket.io": "^1.1.0",
+    "freebox-os-client": "N44PS/freebox-os-client"
   },
   "devDependencies": {
     "browserify": "~6.0.3",
