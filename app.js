@@ -152,8 +152,7 @@ var
   openSession = function (param) {
     var deferred = Q.defer();
     SeedBox.openSession(null, param, null, function (res) {
-        session.apptoken = res.result.session_token;
-        deferred.resolve(session.apptoken);
+        deferred.resolve(res.result.session_token);
     });
     return deferred.promise;
   },
