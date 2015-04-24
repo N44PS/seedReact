@@ -6,17 +6,13 @@ var Downloads = require('./Downloads.react.js');
 module.exports = Seed = React.createClass({
   socket:'',
   getInitialState: function(props){
-
     props = props || this.props;
     return {
       downloads: props.downloads
     };
-
   },
   componentDidMount: function(){
-
     var self = this;
-
     this.socket = io.connect();
     this.socket.on('downloads', function (data) {
       if(data){
@@ -37,7 +33,6 @@ module.exports = Seed = React.createClass({
         self.setState({downloads: downloads});
       }
     });
-
   },
   componentWillReceiveProps: function(newProps, oldProps){
     this.setState(this.getInitialState(newProps));
